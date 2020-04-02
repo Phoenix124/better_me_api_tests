@@ -1,0 +1,27 @@
+{
+  "_embedded": {
+    "customer": [
+      {
+        "firstName": "string",
+        "lastName": "string",
+        "username": "string",
+        "_links": {
+          "self": {
+            "href": "string"
+          },
+          "customer": {
+            "href": "string"
+          },
+          "addresses": {
+            "href": "string"
+          },
+          "cards": {
+            "href": "string"
+          }
+        }
+      }
+    ]
+  },
+  "_links": {},
+  "page": {}
+}

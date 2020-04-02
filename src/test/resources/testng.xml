@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Api Tests">
+    <test name="Login">
+        <packages>
+            <package name="better.me.tests.login"/>
+        </packages>
+    </test>
+    <test name="Register">
+        <packages>
+            <package name="better.me.tests.register"/>
+        </packages>
+    </test>
+</suite>
