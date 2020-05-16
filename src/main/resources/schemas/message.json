@@ -1,0 +1,49 @@
+[
+  {
+    "to_org": {
+      "org_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+      "sub_org_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+    },
+    "proxy_org": {
+      "org_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+      "sub_org_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+    },
+    "documents": [
+      {
+        "type": "string",
+        "version": "string",
+        "parent_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "initial_document_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "initiator_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "sub_org_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "external_id": "string",
+        "comment": "string",
+        "fields": {
+          "line_number\"": 1,
+          "vat": "vat18",
+          "sum": 12345.5534,
+          "currency": "RUR",
+          "is_paid": true,
+          "date_paid": 121231234
+        },
+        "details": [
+          {
+            "line_number\"": 1,
+            "vat": "vat18",
+            "sum": 12345.5534,
+            "currency": "RUR",
+            "is_paid": true,
+            "date_paid": 121231234
+          }
+        ],
+        "is_require_recipient_signature": false,
+        "package_key": 0,
+        "signed_content": {
+          "is_encrypted_content": false,
+          "file_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+          "signature_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+        }
+      }
+    ]
+  }
+]
