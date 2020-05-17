@@ -35,57 +35,39 @@ public class BaseTest {
 
     protected File getFile(String filename) {
         ClassLoader classLoader = BaseTest.class.getClassLoader();
-        return new File(classLoader.getResource("schemas/" + filename).getFile());
+        return new File(classLoader.getResource("files/" + filename).getFile());
     }
 
     protected Message getMessage(String fileOguid) {
         ToOrganization toOrganization = new ToOrganization();
-        toOrganization.setOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        toOrganization.setSubOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-
-        ProxyOrg proxyOrg = new ProxyOrg();
-        proxyOrg.setOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        proxyOrg.setSubOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
+        toOrganization.setOrgOguid("33194d4b-527a-45bb-aac6-17e43722c08d");
 
         Fields fields = new Fields();
-        fields.setLineNumber(1);
-        fields.setVat("vat18");
-        fields.setSum(12345.5534);
-        fields.setCurrency("RUB");
-        fields.setIsPaid(true);
-        fields.setDatePaid(121231234);
+        fields.setGrounds(null);
+        fields.setSumVat("17.23");
+        fields.setCurrency("RUR");
+        fields.setSumTotal("1345.32");
+        fields.setCostCenter(null);
+        fields.setCostAccount(null);
+        fields.setDocumentDate("1588118400000");
+        fields.setPurchaseOrder(null);
+        fields.setDocumentNumber("string");
 
         Detail detail = new Detail();
-        detail.setLineNumber(1);
-        detail.setVat("vat18");
-        detail.setSum(1234.5534);
-        detail.setCurrency("RUR");
-        detail.setIsPaid(true);
-        detail.setDatePaid(121231234);
 
         SignedContent signedContent = new SignedContent();
-        signedContent.setIsEncryptedContent(false);
         signedContent.setFileOguid(fileOguid);
-        signedContent.setSignatureOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
 
         Document document = new Document();
-        document.setType("string");
-        document.setVersion("string");
-        document.setParentOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        document.setInitialDocumentOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        document.setInitiatorOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        document.setSubOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
-        document.setExternalId("string");
-        document.setComment("string");
+        document.setType("universal_transfer_document.sf");
+        document.setVersion("1");
         document.setFields(fields);
         document.setDetails(Collections.singletonList(detail));
-        document.setIsRequireRecipientSignature(true);
-        document.setPackageKey(0);
         document.setSignedContent(signedContent);
 
         Message message = new Message();
+        message.setMessageType("letter");
         message.setToOrganization(toOrganization);
-        message.setProxyOrg(proxyOrg);
         message.setDocuments(Collections.singletonList(document));
         return message;
     }
@@ -100,12 +82,15 @@ public class BaseTest {
         proxyOrg.setSubOrgOguid("875051bc-15e4-497a-91ec-1ef939a9b053");
 
         Fields fields = new Fields();
-        fields.setLineNumber(1);
-        fields.setVat("vat18");
-        fields.setSum(12345.5534);
-        fields.setCurrency("RUB");
-        fields.setIsPaid(true);
-        fields.setDatePaid(121231234);
+        fields.setGrounds(null);
+        fields.setSumVat("17.23");
+        fields.setCurrency("RUR");
+        fields.setSumTotal("1345.32");
+        fields.setCostCenter(null);
+        fields.setCostAccount(null);
+        fields.setDocumentDate("1588118400000");
+        fields.setPurchaseOrder(null);
+        fields.setDocumentNumber("string");
 
         Detail detail = new Detail();
         detail.setLineNumber(1);

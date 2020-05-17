@@ -2,19 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Api Tests">
-    <test name="Attachements">
+    <test name="Message">
         <packages>
-            <package name="better.me.tests.attachments"/>
-        </packages>
-    </test>
-    <test name="Login">
-        <packages>
-            <package name="better.me.tests.login"/>
-        </packages>
-    </test>
-    <test name="Register">
-        <packages>
-            <package name="better.me.tests.register"/>
+            <package name="better.me.tests.message"/>
         </packages>
     </test>
 </suite>

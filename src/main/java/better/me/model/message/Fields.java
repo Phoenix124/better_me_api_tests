@@ -7,58 +7,57 @@ import java.util.Map;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
-        "line_number\"",
-        "vat",
-        "sum",
+        "grounds",
+        "sum_vat",
         "currency",
-        "is_paid",
-        "date_paid"
+        "sum_total",
+        "cost_center",
+        "cost_account",
+        "document_date",
+        "purchase_order",
+        "document_number"
 })
 public class Fields {
 
-    @JsonProperty("line_number\"")
-    private Integer lineNumber;
-    @JsonProperty("vat")
-    private String vat;
-    @JsonProperty("sum")
-    private Double sum;
+    @JsonProperty("grounds")
+    private Object grounds;
+    @JsonProperty("sum_vat")
+    private String sumVat;
     @JsonProperty("currency")
     private String currency;
-    @JsonProperty("is_paid")
-    private Boolean isPaid;
-    @JsonProperty("date_paid")
-    private Integer datePaid;
+    @JsonProperty("sum_total")
+    private String sumTotal;
+    @JsonProperty("cost_center")
+    private Object costCenter;
+    @JsonProperty("cost_account")
+    private Object costAccount;
+    @JsonProperty("document_date")
+    private String documentDate;
+    @JsonProperty("purchase_order")
+    private Object purchaseOrder;
+    @JsonProperty("document_number")
+    private String documentNumber;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-    @JsonProperty("line_number\"")
-    public Integer getLineNumber() {
-        return lineNumber;
+    @JsonProperty("grounds")
+    public Object getGrounds() {
+        return grounds;
     }
 
-    @JsonProperty("line_number\"")
-    public void setLineNumber(Integer lineNumber) {
-        this.lineNumber = lineNumber;
+    @JsonProperty("grounds")
+    public void setGrounds(Object grounds) {
+        this.grounds = grounds;
     }
 
-    @JsonProperty("vat")
-    public String getVat() {
-        return vat;
+    @JsonProperty("sum_vat")
+    public String getSumVat() {
+        return sumVat;
     }
 
-    @JsonProperty("vat")
-    public void setVat(String vat) {
-        this.vat = vat;
-    }
-
-    @JsonProperty("sum")
-    public Double getSum() {
-        return sum;
-    }
-
-    @JsonProperty("sum")
-    public void setSum(Double sum) {
-        this.sum = sum;
+    @JsonProperty("sum_vat")
+    public void setSumVat(String sumVat) {
+        this.sumVat = sumVat;
     }
 
     @JsonProperty("currency")
@@ -71,24 +70,64 @@ public class Fields {
         this.currency = currency;
     }
 
-    @JsonProperty("is_paid")
-    public Boolean getIsPaid() {
-        return isPaid;
+    @JsonProperty("sum_total")
+    public String getSumTotal() {
+        return sumTotal;
     }
 
-    @JsonProperty("is_paid")
-    public void setIsPaid(Boolean isPaid) {
-        this.isPaid = isPaid;
+    @JsonProperty("sum_total")
+    public void setSumTotal(String sumTotal) {
+        this.sumTotal = sumTotal;
     }
 
-    @JsonProperty("date_paid")
-    public Integer getDatePaid() {
-        return datePaid;
+    @JsonProperty("cost_center")
+    public Object getCostCenter() {
+        return costCenter;
     }
 
-    @JsonProperty("date_paid")
-    public void setDatePaid(Integer datePaid) {
-        this.datePaid = datePaid;
+    @JsonProperty("cost_center")
+    public void setCostCenter(Object costCenter) {
+        this.costCenter = costCenter;
+    }
+
+    @JsonProperty("cost_account")
+    public Object getCostAccount() {
+        return costAccount;
+    }
+
+    @JsonProperty("cost_account")
+    public void setCostAccount(Object costAccount) {
+        this.costAccount = costAccount;
+    }
+
+    @JsonProperty("document_date")
+    public String getDocumentDate() {
+        return documentDate;
+    }
+
+    @JsonProperty("document_date")
+    public void setDocumentDate(String documentDate) {
+        this.documentDate = documentDate;
+    }
+
+    @JsonProperty("purchase_order")
+    public Object getPurchaseOrder() {
+        return purchaseOrder;
+    }
+
+    @JsonProperty("purchase_order")
+    public void setPurchaseOrder(Object purchaseOrder) {
+        this.purchaseOrder = purchaseOrder;
+    }
+
+    @JsonProperty("document_number")
+    public String getDocumentNumber() {
+        return documentNumber;
+    }
+
+    @JsonProperty("document_number")
+    public void setDocumentNumber(String documentNumber) {
+        this.documentNumber = documentNumber;
     }
 
     @JsonAnyGetter

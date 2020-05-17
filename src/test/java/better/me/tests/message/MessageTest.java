@@ -1,4 +1,4 @@
-package better.me.tests.attachments;
+package better.me.tests.message;
 
 import better.me.model.message.Message;
 import better.me.tests.BaseTest;
@@ -7,30 +7,32 @@ import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.net.HttpURLConnection;
 import java.util.Collections;
 import java.util.List;
 
 import static better.me.enums.UrlConstants.ATTACHMENT_URL;
 import static better.me.enums.UrlConstants.MESSAGE_URL;
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.*;
 
-public class AttachmentsTest extends BaseTest {
+public class MessageTest extends BaseTest {
 
     @Test(description = "Upload document with 200 code")
     public void uploadDocument() {
-        File file = getFile("login_schema_response.json");
+        File file = getFile("Byte.txt");
 
-        String response = given()
+        Response response = given()
                 .multiPart(file)
                 .when()
                 .post(ATTACHMENT_URL)
-                .then()
-                .extract()
-                .response().as(String.class);
+                .andReturn();
 
-        List<Message> message = Collections.singletonList(getMessage(response));
+        assertEquals(HttpURLConnection.HTTP_CREATED, response.getStatusCode());
+        assertNotNull(response.getBody());
+
+        String fileId = response.as(String.class);
+        List<Message> message = Collections.singletonList(getMessage(fileId));
 
         Response messageResponse = given()
                 .contentType(ContentType.JSON)
@@ -39,6 +41,7 @@ public class AttachmentsTest extends BaseTest {
                 .post(MESSAGE_URL)
                 .andReturn();
 
-        System.out.println(messageResponse.getBody().asString());
+        assertEquals(HttpURLConnection.HTTP_OK, messageResponse.getStatusCode());
+        assertNotNull(messageResponse.getBody());
     }
 }

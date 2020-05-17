@@ -15,6 +15,8 @@ import java.util.Map;
 })
 public class Message {
 
+    @JsonProperty("message_type")
+    private String messageType;
     @JsonProperty("to_org")
     private ToOrganization toOrganization;
     @JsonProperty("proxy_org")
@@ -23,6 +25,16 @@ public class Message {
     private List<Document> documents = null;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<>();
+
+    @JsonProperty("message_type")
+    public String getMessageType() {
+        return messageType;
+    }
+
+    @JsonProperty("message_type")
+    public void setMessageType(String messageType) {
+        this.messageType = messageType;
+    }
 
     @JsonProperty("to_org")
     public ToOrganization getToOrganization() {

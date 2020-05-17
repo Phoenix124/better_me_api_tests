@@ -1,0 +1,145 @@
+[
+  {
+    "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+    "last_patch_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+    "last_patch_timestamp": 1573803198508,
+    "last_event_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+    "last_event_timestamp": 1573803198508,
+    "send_timestamp": 1573803198508,
+    "message_timestamp": 1573803198508,
+    "delivery_timestamp": 1573803198508,
+    "contractor_org": {
+      "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+      "inn": "012345678901",
+      "kpp": "123456789",
+      "ogrn": "01234567890123",
+      "name_short": "Ромашка"
+    },
+    "proxy_org": {
+      "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+      "inn": "012345678901",
+      "kpp": "123456789",
+      "ogrn": "01234567890123",
+      "name_short": "Ромашка"
+    },
+    "is_proxified": true,
+    "documents": [
+      {
+        "message_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "parent_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "initial_document_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "initiator": {
+          "oguid": "7f421717-6a80-4b19-8673-a2fe1ea51890",
+          "surname": "Иванов",
+          "name": "Иван",
+          "patronymic": "Иванович",
+          "position": "Начальник Камчатки",
+          "email": "user@example.com"
+        },
+        "sub_org": {
+          "oguid": "28b87807-a2a5-4783-aef6-06bf698beb00",
+          "name": "Головной офис"
+        },
+        "is_external": true,
+        "external_id": "string",
+        "document_id": 0,
+        "comment": "string",
+        "flow_state": "approval",
+        "flow_result": "approved",
+        "index_key": 0,
+        "related_document_count": 0,
+        "package_document_count": 0,
+        "document_timestamp": 1573803198508,
+        "message_timestamp": 1573803198508,
+        "type": "string",
+        "version": "string",
+        "workflow_statuses": [
+          "string"
+        ],
+        "is_workflow_finished": true,
+        "contractor_org": {
+          "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+          "inn": "012345678901",
+          "kpp": "123456789",
+          "ogrn": "01234567890123",
+          "name_short": "Ромашка"
+        },
+        "proxy_org": {
+          "oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+          "inn": "012345678901",
+          "kpp": "123456789",
+          "ogrn": "01234567890123",
+          "name_short": "Ромашка"
+        },
+        "is_proxy": true,
+        "fields": {
+          "line_number\"": 1,
+          "vat": "vat18",
+          "sum": 12345.5534,
+          "currency": "RUR",
+          "is_paid": true,
+          "date_paid": 121231234
+        },
+        "details": [
+          {
+            "line_number\"": 1,
+            "vat": "vat18",
+            "sum": 12345.5534,
+            "currency": "RUR",
+            "is_paid": true,
+            "date_paid": 121231234
+          }
+        ],
+        "document_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+        "additional_workflow_information": {
+          "sender_signature": {
+            "attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "is_recipient_signature_required": true,
+          "recipient_signature": {
+            "attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "recipient_title": {
+            "attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "proxy_signature": {
+            "attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "proxy_title": {
+            "attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "recipient_confirmation": {
+            "recipient_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "recipient_confirmation_operator": {
+            "confirmation_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+            "receipt_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "operator_confirmation": {
+            "confirmation_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+            "receipt_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "recipient_title_confirmation": {
+            "confirmation_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "correction_request": {
+            "request": {
+              "confirmation_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+              "receipt_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+            },
+            "is_requested": false,
+            "is_revised": false,
+            "is_corrected": false
+          },
+          "revocation": {
+            "confirmation_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+            "receipt_attachment_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053"
+          },
+          "last_event_oguid": "875051bc-15e4-497a-91ec-1ef939a9b053",
+          "last_event_timestamp": 1573803198508
+        }
+      }
+    ]
+  }
+]

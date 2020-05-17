@@ -1,0 +1,27 @@
+{
+  "message_type": "letter",
+  "to_org": {
+    "org_oguid": "33194d4b-527a-45bb-aac6-17e43722c08d"
+  },
+  "documents": [
+    {
+      "type": "universal_transfer_document.sf",
+      "version": "1",
+      "fields": {
+        "grounds": null,
+        "sum_vat": "17.23",
+        "currency": "RUR",
+        "sum_total": "1345.32",
+        "cost_center": null,
+        "cost_account": null,
+        "document_date": "1588118400000",
+        "purchase_order": null,
+        "document_number": "string"
+      },
+      "details": [],
+      "signed_content": {
+        "file_oguid": "7e0e5f37-6d61-46ca-8899-353a5e2122cd"
+      }
+    }
+  ]
+}
