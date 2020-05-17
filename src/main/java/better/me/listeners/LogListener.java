@@ -5,6 +5,7 @@ import io.restassured.RestAssured;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import org.apache.log4j.BasicConfigurator;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

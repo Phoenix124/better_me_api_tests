@@ -1,0 +1,5 @@
+<aspectj>
+    <aspects>
+        <concrete-aspect name="org.codehaus.groovy.runtime.callsite.AbstractCallSite"/>
+    </aspects>
+</aspectj>
