@@ -14,6 +14,7 @@ import java.util.List;
 import static better.me.enums.UrlConstants.ATTACHMENT_URL;
 import static better.me.enums.UrlConstants.MESSAGE_URL;
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.testng.Assert.*;
 
 public class MessageTest extends BaseTest {

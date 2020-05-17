@@ -10,5 +10,6 @@ public class TestConfig {
 
     static {
         baseUrl = properties.getProperty("BASE_URL_PARAM");
+
     }
 }

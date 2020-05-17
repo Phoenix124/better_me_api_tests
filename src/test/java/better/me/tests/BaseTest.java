@@ -18,8 +18,6 @@ import static io.restassured.RestAssured.given;
 @Listeners(LogListener.class)
 public class BaseTest {
 
-    protected Faker FAKER = new Faker();
-
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() {
         RestAssured.baseURI = TestConfig.baseUrl;
