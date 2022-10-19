@@ -22,7 +22,7 @@
         <allure.version>2.13.2</allure.version>
         <allure.maven.plugin.version>2.10.0</allure.maven.plugin.version>
 
-        <jackson.version>2.10.3</jackson.version>
+        <jackson.version>2.13.4.1</jackson.version>
         <java.faker.version>1.0.2</java.faker.version>
         <log4j2.slf4j.version>2.11.2</log4j2.slf4j.version>
         <aspectj.version>1.9.5</aspectj.version>
